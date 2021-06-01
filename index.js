@@ -3,6 +3,8 @@ import path from 'path';
 
 let nodaJSONMap = JSON.parse(fs.readFileSync("nodamap.json"));
 
+let mapTitle = nodaJSONMap.name;
+
 //Get Nodes
 let nodes = nodaJSONMap.nodes.map(function (node) {
     let nodeToReturn = {};
@@ -63,10 +65,11 @@ let linkedNodes = uniqueLinks.map(function(link){
 
 //Convert the linked nodes One to Many relationship trees to markdown lists
 function linkedNodesToText(linkedNodesToConvert){
+    let textFileStringContent = "# " + capitaliseFirstLetter(mapTitle) + "\n\n";
     let paragraphs = linkedNodesToConvert.map(function(nodeTree){
         return "### " + capitaliseFirstLetter(nodeTree.parent.text) + "\n- " + nodeTree.children.map(child=>capitaliseFirstLetter(child.text)).join("\n- ");
     });
-    let textFileStringContent = paragraphs.join("\n\n");
+    textFileStringContent += paragraphs.join("\n\n");
     return textFileStringContent;
 }
 
