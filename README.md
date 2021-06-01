@@ -19,3 +19,7 @@ To use as is:
 5. If ran successfully you'll find "converted.md" in the root folder.
 
 Preview converted.md with a markdown reader.
+
+<hr>
+
+<iframe src='https://ko-fi.com/developerone/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='developerone'></iframe>
