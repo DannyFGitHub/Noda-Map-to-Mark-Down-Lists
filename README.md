@@ -24,3 +24,8 @@ To use as is:
 5. If ran successfully you'll find "converted.md" in the root folder.
 
 Preview converted.md with a markdown reader.
+
+#### Next Steps:
+
+- Currently works with the texts of nodes, but could put more effort to make it work with images or other media too.
+- Refactor into nested lists/trees mindfully considering relationships that resemble graph structures.
