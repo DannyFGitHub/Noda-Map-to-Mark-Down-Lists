@@ -25,7 +25,7 @@ To use as is:
 
 Preview converted.md with a markdown reader.
 
-#### Next Steps:
+### Ideas:
 
 - Currently works with the texts of nodes, but could put more effort to make it work with images or other media too.
 - Refactor into nested lists/trees mindfully considering relationships that resemble graph structures.
